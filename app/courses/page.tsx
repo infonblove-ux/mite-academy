@@ -88,9 +88,7 @@ export default function Courses() {
         
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <Link href="/" className="inline-flex items-center gap-2 text-[#ebff00] hover:text-white transition-colors text-sm font-bold mb-6">
-            <i data-lucide="arrow-left" className="w-4 h-4"></i> হোমে ফিরে যান
-          </Link>
+          
           <h1 className="text-3xl sm:text-5xl font-extrabold mb-6">
             আমাদের <span className="text-electric-yellow">স্কিল ডেভেলপমেন্ট</span> কোর্সসমূহ
           </h1>
