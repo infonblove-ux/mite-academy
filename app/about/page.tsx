@@ -100,11 +100,7 @@ export default function About() {
       ></div>
 
       {/* Navigation / Back Button (Optional) */}
-      <div className="relative z-50 p-6 max-w-5xl mx-auto">
-        <Link href="/" className="inline-flex items-center gap-2 text-[#ebff00] hover:text-white transition-colors text-sm font-bold">
-          <i data-lucide="arrow-left" className="w-4 h-4"></i> হোমে ফিরে যান
-        </Link>
-      </div>
+     
 
       {/* MAIN WRAPPER */}
       <main className="relative z-10 py-6 md:py-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
