@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-brand-pink: #ff00a8;
+  --color-brand-purple: #9a00a7;
+  --color-brand-yellow: #ebff00;
+  --color-deep-violet: #3a0045;
+  --color-rich-plum: #1f0026;
+
+  --font-bangla: "Anek Bangla", sans-serif;
+  --font-sans: "Anek Bangla", Helvetica, Arial, sans-serif;
+
+  --animate-glow-pulse: glowPulse 3s ease-in-out infinite;
+  --animate-float: float 4s ease-in-out infinite;
+  --animate-marquee: marquee 25s linear infinite;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+::selection {
+  background-color: #ebff00;
+  color: #000000;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1f0026;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff00a8;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ebff00;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at 15% 15%, #ff00a8 0%, #750080 35%, #34003d 70%, #15001a 100%);
+  background-attachment: fixed;
+  color: #ffffff;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.35);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-box:hover {
+  background: rgba(255, 255, 255, 0.13);
+  border-color: rgba(235, 255, 0, 0.45);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(255, 0, 168, 0.25);
+}
+
+.btn-electric {
+  background-color: #ebff00;
+  color: #0d0012;
+  font-weight: 700;
+  box-shadow: 0 0 22px rgba(235, 255, 0, 0.45);
+  transition: all 0.25s ease-in-out;
+}
+.btn-electric:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 32px rgba(235, 255, 0, 0.7);
+}
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+}
+.btn-glass:hover {
+  border-color: #ebff00;
+  color: #ebff00;
+  background: rgba(235, 255, 0, 0.08);
+}
+
+.text-electric-yellow {
+  color: #ebff00;
+  text-shadow: 0 0 18px rgba(235, 255, 0, 0.35);
 }
