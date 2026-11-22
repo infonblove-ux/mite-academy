@@ -562,7 +562,8 @@ export default function Home() {
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-xs font-bold uppercase tracking-wider text-white/70">One-Time Complete</span>
-                  <span className="px-3 py-1 rounded-full bg-[#ebff00]/15 text-[#ebff00] text-xs font-semibold">সর্বাধিক সাশ্রয়ী</span>
+                  <span className="px-3 py-1 rounded-full bg-[#ebff00]/15 text-[#ebff00] text-xs font-semibold">Upto RS 500 ছাড়
+</span>
                 </div>
                 <h3 className="text-2xl font-black mb-2">ফুল পেমেন্ট প্ল্যান</h3>
                 <p className="text-white/70 text-sm mb-6">এককালীন পরিশোধে পাচ্ছেন বিশেষ ছাড় ও অতিরিক্ত প্রিমিয়াম স্টাডি প্যাক।</p>
