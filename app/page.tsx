@@ -655,7 +655,7 @@ export default function Home() {
             </div>
 
             <div className="glass-box rounded-2xl overflow-hidden">
-  z              <button className="faq-toggle w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+                <button className="faq-toggle w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
                 <span className="font-bold text-base sm:text-lg text-white">কারা MITE Academy-তে কোর্স করতে পারবেন?</span>
                 <i data-lucide="chevron-down" className="faq-chevron w-5 h-5 text-[#ebff00] transition-transform duration-300"></i>
               </button>
