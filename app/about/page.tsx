@@ -157,7 +157,7 @@ export default function About() {
           {/* Extended Story & Value Proposition */}
           <div className="mt-8 pt-8 border-t border-white/10 space-y-5 text-purple-100 leading-relaxed text-base sm:text-lg">
             <p>
-              সেই উপলব্ধি থেকেই আমাদের এই ছোট্ট উদ্যোগ—<strong className="text-electric-yellow font-bold">MITE Academy</strong>। আমাদের লক্ষ্য শুধু আপনাকে কোনো একটি সফটওয়্যার শেখানো নয়। আমরা চাই, আপনি এমন <span className="text-white font-semibold underline decoration-[#ff00a8] decoration-2 underline-offset-4">practical digital skills</span> অর্জন করুন যা বাস্তব কাজ, freelancing এবং career growth-এর ক্ষেত্রে কাজে লাগাতে পারবেন।
+              সেই উপলব্ধি থেকেই আমাদের এই ছোট্ট উদ্যোগ—<strong className="text-electric-yellow font-bold">MITE Academy</strong>। আমাদের লক্ষ্য শুধু আপনাকে কোনো একটি সফটওয়্যার শেখানো নয়। আমরা চাই, আপনি এমন <span className="text-white font-semibold underline decoration-[#ff00a8] decoration-2 underline-offset-4">Practical Digital Skills</span> অর্জন করুন যা বাস্তব কাজ, freelancing এবং career growth-এর ক্ষেত্রে কাজে লাগাতে পারবেন।
             </p>
 
             <p>
