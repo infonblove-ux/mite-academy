@@ -8,7 +8,7 @@ function UsersCheckIcon({ className = "w-5 h-5" }: { className?: string }) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="2.2"
       strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
@@ -16,7 +16,7 @@ function UsersCheckIcon({ className = "w-5 h-5" }: { className?: string }) {
     >
       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
       <circle cx="9" cy="7" r="4" />
-      <polyline points="16 11 18 13 22 9" />
+      <path d="m16 11 2 2 4-4" />
     </svg>
   );
 }
@@ -27,7 +27,7 @@ function AwardIcon({ className = "w-5 h-5" }: { className?: string }) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="2.2"
       strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
@@ -249,21 +249,21 @@ export default function About() {
 
             {/* Highlights Strip */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/15 flex items-start gap-3">
-                <div className="w-10 h-10 rounded-xl bg-brandPink/20 text-brandPink flex items-center justify-center shrink-0 mt-0.5">
+              <div className="p-4 rounded-2xl bg-white/[0.06] border border-white/15 flex items-start gap-3.5">
+                <div className="w-11 h-11 rounded-xl bg-[#ebff00]/15 border border-[#ebff00]/30 text-[#ebff00] flex items-center justify-center shrink-0 mt-0.5">
                   <UsersCheckIcon className="w-5 h-5" />
                 </div>
-                <p className="text-sm sm:text-base text-white">
+                <p className="text-sm sm:text-base text-white leading-relaxed">
                   আপনাকে শেখানোর জন্য আপনাদের পাশে পাবেন রিয়েল মার্কেটে কাজ করা অভিজ্ঞ শিক্ষক,
                   শিক্ষিকা। যারা আপনাকে হাত ধরে শেখাবে সমস্থ স্কিলস। যে কোনো সমস্যায় পাশে থাকবেন।
                 </p>
               </div>
 
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/15 flex items-start gap-3">
-                <div className="w-10 h-10 rounded-xl bg-[#ebff00]/20 text-[#ebff00] flex items-center justify-center shrink-0 mt-0.5">
+              <div className="p-4 rounded-2xl bg-white/[0.06] border border-white/15 flex items-start gap-3.5">
+                <div className="w-11 h-11 rounded-xl bg-[#ebff00]/15 border border-[#ebff00]/30 text-[#ebff00] flex items-center justify-center shrink-0 mt-0.5">
                   <AwardIcon className="w-5 h-5" />
                 </div>
-                <p className="text-sm sm:text-base text-white">
+                <p className="text-sm sm:text-base text-white leading-relaxed">
                   বর্তমান বাজারের কম্পিটিশনে টিকে থাকবার জন্য পাবেন কোর্স শেষে{" "}
                   <strong className="text-electric-yellow">Certificate</strong>.
                 </p>
