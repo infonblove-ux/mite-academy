@@ -1,7 +1,80 @@
 "use client";
 
 import { useEffect } from "react";
-import { Award, Quote, Target, UsersCheck } from "lucide-react";
+
+function UsersCheckIcon({ className = "w-5 h-5" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+      <circle cx="9" cy="7" r="4" />
+      <polyline points="16 11 18 13 22 9" />
+    </svg>
+  );
+}
+
+function AwardIcon({ className = "w-5 h-5" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="8" r="6" />
+      <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+    </svg>
+  );
+}
+
+function TargetIcon({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <circle cx="12" cy="12" r="6" />
+      <circle cx="12" cy="12" r="2" />
+    </svg>
+  );
+}
+
+function QuoteIcon({ className = "w-10 h-10" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" />
+      <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
+    </svg>
+  );
+}
 
 export default function About() {
   useEffect(() => {
@@ -178,7 +251,7 @@ export default function About() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
               <div className="p-4 rounded-2xl bg-white/5 border border-white/15 flex items-start gap-3">
                 <div className="w-10 h-10 rounded-xl bg-brandPink/20 text-brandPink flex items-center justify-center shrink-0 mt-0.5">
-                  <UsersCheck className="w-5 h-5" />
+                  <UsersCheckIcon className="w-5 h-5" />
                 </div>
                 <p className="text-sm sm:text-base text-white">
                   আপনাকে শেখানোর জন্য আপনাদের পাশে পাবেন রিয়েল মার্কেটে কাজ করা অভিজ্ঞ শিক্ষক,
@@ -188,7 +261,7 @@ export default function About() {
 
               <div className="p-4 rounded-2xl bg-white/5 border border-white/15 flex items-start gap-3">
                 <div className="w-10 h-10 rounded-xl bg-[#ebff00]/20 text-[#ebff00] flex items-center justify-center shrink-0 mt-0.5">
-                  <Award className="w-5 h-5" />
+                  <AwardIcon className="w-5 h-5" />
                 </div>
                 <p className="text-sm sm:text-base text-white">
                   বর্তমান বাজারের কম্পিটিশনে টিকে থাকবার জন্য পাবেন কোর্স শেষে{" "}
@@ -203,7 +276,7 @@ export default function About() {
         <section className="glass-box rounded-3xl p-6 sm:p-10 md:p-12 mb-10 relative overflow-hidden">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#ebff00]/15 border border-[#ebff00]/30 text-[#ebff00] font-bold text-sm">
-              <Target className="w-4 h-4" />
+              <TargetIcon className="w-4 h-4" />
               আমাদের লক্ষ্যঃ
             </div>
 
@@ -237,7 +310,7 @@ export default function About() {
         <div className="glass-box rounded-3xl p-8 sm:p-12 text-center mb-10 border-2 border-brandPink/30 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-brandPink/15 via-transparent to-[#ebff00]/10 pointer-events-none"></div>
           <div className="relative z-10 max-w-3xl mx-auto space-y-4">
-            <Quote className="w-10 h-10 text-[#ebff00] mx-auto opacity-80" />
+            <QuoteIcon className="w-10 h-10 text-[#ebff00] mx-auto opacity-80" />
             <blockquote className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-snug">
               “চাকরি একটি সুযোগ হতে পারে, কিন্তু{" "}
               <span className="text-electric-yellow">দক্ষতা আপনাকে নিজের সুযোগ তৈরি করতে</span>{" "}
