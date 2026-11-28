@@ -1,4 +1,4 @@
-"use client";
+""use client";
 
 import { useEffect } from "react";
 import { Award, Quote, Target, UsersCheck } from "lucide-react";
